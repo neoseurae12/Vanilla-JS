@@ -1,17 +1,20 @@
-const daysofWeek = ["mon", "tue", "wed", "thu", "fri", "sat"];
-const nonsense = [1, 2, "hello", false, null, undefined, true, "rowan"];
+const player = {
+    name: "rowan",
+    points: 10,
+    fat: false
+};
 
-console.log(daysofWeek, nonsense);
+console.log(player);
+console.log(player.name);
 
-// Get Item from Array
-console.log(daysofWeek[4]);
+console.log(player["name"]);
 
-// Add one more day to the array
-daysofWeek.push('sun');
-console.log(daysofWeek);
+// object의 내용을 업데이트도 가능
+player.points = 12;
+console.log(player);
+// object가 동일만 하다면, object 안의 내용을 수정하는 건 constant로 선언됐어도 가능
+// 에러는 constant 전체를 하나의 값으로서 업데이트 하려고 할 때 발생
 
-// const daysofWeek = ["mon", "tue", "wed", "thu", "fri", "sat"];
-// daysofWeek.push('sun');
-// => const는 '상수'라 불변하다고 했는데 이게 어떻게 가능?
-// : const는 '선언한 주소(박스)'를 바꿀수 없다는 말임.
-// 따라서 박스 안의 내용물들을 추가하거나 삭제는 가능함.
+// property를 '추가'하는 것도 가능
+player.lastname = "potato";
+console.log(player);
