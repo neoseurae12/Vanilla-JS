@@ -1,13 +1,8 @@
-const a = 5;
-const b = 2;
+const amIHealthy = true;    // Boolean
+console.log(amIHealthy);
 
-const myName = "rowan";
+const brain = null; // null
+console.log(brain);
 
-console.log(a + b);
-console.log(a * b);
-console.log(a / b);
-console.log("hello " + myName);
-
-myName = "Wonhui Roh";
-
-console.log("my new name is " + myName);
+let something;  // undefined
+console.log(something);
